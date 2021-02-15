@@ -4,6 +4,7 @@ const bodyParser = require("body-parser"); //para pegar conteudo do post
 const connection = require("./database/database");
 const PerguntaSchema = require("./database/PerguntaSchema");
 const RespostaSchema = require("./database/RespostaSchema");
+const PORT = process.env.PORT || 5000
 
 //--- Database
 
@@ -97,7 +98,7 @@ app.post("/responder", (req, res) => {
 
 //--- Server
 
-app.listen(8080, (erro) => {
+app.listen(PORT, (erro) => {
     if(erro) {
         console.log("Erro ao inicializar servidor!");
     }
