@@ -1,0 +1,7 @@
+body {
+    background-color: salmon;
+}
+
+#formulario-pergunta {
+    margin-top: 5vh; /* unidade que representa a porcentagem da tela*/ 
+}

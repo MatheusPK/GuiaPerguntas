@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Guia de Perguntas</title>
+</head>
+<body>
+    <h1>Guia de perguntas!</h1>
+    <hr>
+    <!-- Variaveis -->
+    <!-- Exibe o valor de uma variavel: <%=  %>  -->
+    <h2>Autor: <%= nome %></h2>
+    <h2>Empresa: <%= empresa %></h2>
+    <h2>Linguagem: <%= language %></h2>
+
+    <!-- Condicionais --> 
+    <!-- <%%> Executa codigo js -->
+    <% if (msg) {%>
+        <h3>Isso é uma mensagem de erro!</h3>
+    <%} else { %>
+        <h3>Nenhum erro!</h3>
+    <%}%>
+
+    <!-- Estrutura de repetição-->
+
+    <% produtos.forEach((produto) => { %>
+        <li>
+            <b>Produto: </b> <%= produto.nome %>
+            <b>Preço: </b> <%= produto.preco %>
+        </li>
+        <hr>
+    <%})%>
+
+    <img src="/img/narutin.png">
+    
+
+   
+    
+    
+   
+    
+</body>
+</html>
